@@ -1,2 +1,0 @@
-# BoxgroveCleaners
-Boxgrove Cleaners
