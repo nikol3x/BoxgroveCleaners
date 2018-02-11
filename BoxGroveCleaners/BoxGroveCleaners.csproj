@@ -130,6 +130,7 @@
     <Content Include="Content\style.less" />
     <Content Include="Default.js" />
     <Content Include="favicon.ico" />
+    <Content Include="Models\HoursOfOperation.xml" />
     <Content Include="PageScripts\Content.js" />
     <Content Include="Pages\CleaningProcess.aspx" />
     <Content Include="Pages\ContactUs.aspx" />
@@ -202,6 +203,7 @@
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\FAQs.cs" />
+    <Compile Include="Models\HoursOfOperation.cs" />
     <Compile Include="Pages\CleaningProcess.aspx.cs">
       <DependentUpon>CleaningProcess.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
