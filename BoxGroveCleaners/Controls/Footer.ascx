@@ -65,6 +65,11 @@
                         Contact Us
                     </a>
                 </li>
+                <li>
+                    <a href="/Admin/Login.aspx" class="text-muted">
+                        Administration
+                    </a>
+                </li>
             </ul>
         </section>
         <section class="footer__section">

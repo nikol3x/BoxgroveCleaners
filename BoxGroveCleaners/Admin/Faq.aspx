@@ -33,7 +33,8 @@
     </nav>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="body" runat="server">
-    <asp:panel id="pnlFAQs" cssclass="content" runat="server" visible="false">
+    <form id="frmCoupon" runat="server">
+        <asp:panel id="pnlFAQs" cssclass="content" runat="server">
             <h1 class="content__header">
                 <span class="content__header__text container-main">
                     Update FAQs
@@ -77,6 +78,7 @@
                 </div>
             </section>
         </asp:panel>
+    </form>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="scripts" runat="server">
     <script src="/Scripts/bootstrap.min.js"></script>

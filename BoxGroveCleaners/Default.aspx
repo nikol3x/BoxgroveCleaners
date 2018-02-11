@@ -1,7 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="/Templates/Layout.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="BoxGroveCleaners.Default" %>
 
-<%@ register src="~/Controls/Footer.ascx" tagprefix="uc1" tagname="Footer" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>Boxgrove Cleaners</title>
 </asp:Content>
