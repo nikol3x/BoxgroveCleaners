@@ -120,6 +120,7 @@
     <Content Include="Content\themes\base\images\ui-icons_ffffff_256x240.png" />
     <Content Include="Content\themes\base\jquery-ui-1.10.4.custom.css" />
     <Content Include="Content\themes\base\jquery-ui-1.10.4.custom.min.css" />
+    <Content Include="Controls\Footer.ascx" />
     <Content Include="Coupon\EmptyTextFileSoFolderCanPublish.txt" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Models\FAQs.xml">
@@ -186,6 +187,13 @@
     <Compile Include="Admin\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -231,9 +239,7 @@
       <DependentUpon>Layout.Master</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controls\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Templates\Layout.Master" />
     <Content Include="packages.config" />
