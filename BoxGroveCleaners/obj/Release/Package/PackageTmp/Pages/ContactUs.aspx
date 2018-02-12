@@ -46,106 +46,18 @@
                             Phone: 905-471-7242
                         </address><br />
                         <h2 class="content__section__title">Hours of Operation</h2>
-                        <p>
-                            Mon: 9:00AM - 7:00PM
-                        </p>
-                        <p>
-                            Tues: Closed
-                        </p>
-                        <p>
-                            Wed-Fri: 9:00AM - 7:00PM
-                        </p>
-                        <p>
-                            Sat: 10:00AM - 5:00PM
-                        </p>
-                        <p>
-                            Sun: 11:00AM - 4:00PM
-                        </p>
+                        <asp:repeater id="rptHoursOfOperation" runat="server">
+                            <itemtemplate>
+                                <p>
+                                    <%#Eval("Name") %>:&nbsp;<%#Eval("Hours") %>
+                                </p>
+                            </itemtemplate>
+                        </asp:repeater>
                     </section>
                 </div>
             </div>
         </div>
-    </article>
-    <footer class="footer">
-        <div class="content__header__text container-main cf">
-            <span class="icons--arrowDownMap">&nbsp;</span>
-            <section class="footer__section">
-                <h2 class="content__section__title--contrasting">Services</h2>
-                <ul class="text-muted">
-                    <li>
-                        <a data-js-hook="scrollnav" href="/Default.aspx#pnlFineDryCleaning" class="text-muted">
-                            Fine Dry Cleaning
-                        </a>
-                    </li>
-                    <li>
-                        <a data-js-hook="scrollnav" href="/Default.aspx#pnlShirtLaundering" class="text-muted">
-                            Expert Shirt Laundering
-                        </a>
-                    </li>
-                    <li>
-                        <a data-js-hook="scrollnav" href="/Default.aspx#pnlProfessionalAlterations" class="text-muted">
-                            Professional Alterations
-                        </a>
-                    </li>
-                    <li>
-                        <a data-js-hook="scrollnav" href="/Default.aspx#pnlHouseholdTextile" class="text-muted">
-                            Household Textile Care
-                        </a>
-                    </li>
-                    <li>
-                        <a data-js-hook="scrollnav" href="/Default.aspx#pnlSuedeNLeather" class="text-muted">
-                            Suede &amp; Leather Cleaning
-                        </a>
-                    </li>
-                    <li>
-                        <a data-js-hook="scrollnav" href="/Default.aspx#pnlWeddingGown" class="text-muted">
-                            Wedding Gown Cleaning &amp; Preservation
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <section class="footer__section">
-                <h2 class="content__section__title--contrasting">Links</h2>
-                <ul class="text-muted">
-                    <li>
-                        <a data-js-hook="singlepagenav" href="/Default.aspx" class="text-muted">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a data-js-hook="singlepagenav" href="/Pages/Services.aspx" class="text-muted">
-                            Services
-                        </a>
-                    </li>
-                    <li>
-                        <a data-js-hook="singlepagenav" href="/Pages/CleaningProcess.aspx" class="text-muted">
-                            Cleaning Process
-                        </a>
-                    </li>
-                    <li>
-                        <a data-js-hook="singlepagenav" href="/Pages/LaundryFaqs.aspx" class="text-muted">
-                            Laundry FAQs
-                        </a>
-                    </li>
-                    <li>
-                        <a data-js-hook="singlepagenav" href="/Pages/ContactUs.aspx" class="text-muted">
-                            Contact Us
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <section class="footer__section">
-                <h2 class="content__section__title--contrasting">Affiliation</h2>
-                <ul class="text-muted">
-                    <li>
-                        <a data-js-hook="singlepagenav" href="/Pages/CleaningProcess.aspx" class="text-muted">
-                            GreenEarth Cleaning
-                        </a>
-                    </li>
-                </ul>
-            </section>
-        </div>
-    </footer>
+    </article>    
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="scripts" runat="server">
     <script src="https://maps.googleapis.com/maps/api/js"></script>

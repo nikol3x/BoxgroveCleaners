@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿<%@ register src="/Controls/Footer.ascx" tagprefix="uc1" tagname="Footer" %>
+<!DOCTYPE html>
 
 <html>
 <head runat="server">
@@ -32,6 +33,7 @@
     </header>
     <main class="main">
         <asp:contentplaceholder id="body" runat="server"></asp:contentplaceholder>
+        <uc1:Footer runat="server" id="Footer" />
     </main>
     <script src="/Scripts/jquery-1.10.2.js"></script>
     <script src="/Scripts/jquery-ui-1.10.4.custom.min.js"></script>

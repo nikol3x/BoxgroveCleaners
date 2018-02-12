@@ -1,4 +1,4 @@
-﻿<%@ register src="~/Controls/Footer.ascx" tagprefix="uc1" tagname="Footer" %>
+﻿<%@ register src="/Controls/Footer.ascx" tagprefix="uc1" tagname="Footer" %>
 <!DOCTYPE html>
 
 <html>
