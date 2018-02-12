@@ -11,6 +11,11 @@ namespace BoxGroveCleaners.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["user"] == null)
+            {
+                Response.Redirect("/Admin/Login.aspx");
+            }
+
             if (IsPostBack == false)
             {
                 var faqModel = new FAQs();

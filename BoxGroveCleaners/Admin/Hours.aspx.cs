@@ -12,6 +12,11 @@ namespace BoxGroveCleaners.Admin
         #region Event Handlers
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["user"] == null)
+            {
+                Response.Redirect("/Admin/Login.aspx");
+            }
+
             if (IsPostBack == false)
             {
                 var hoursModel = new HoursOfOperation();
