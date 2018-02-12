@@ -127,7 +127,7 @@
             </div>
             <div class="banner__summary cf">
                 <section class="banner__summary__section">
-                    <h1 class="banner__summary__header">Special Promotion</h1>
+                    <h1 class="banner__summary__header">Announcements &amp;<br />Special Promotion</h1>
                     <a href="/Coupon/Coupon.pdf" target="_blank" class="banner__summary__text text-contrasting">
                         Click Here to print our latest coupon
                     </a>
