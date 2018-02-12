@@ -80,6 +80,31 @@
                         GreenEarth Cleaning
                     </a>
                 </li>
+                <li>
+                    <a href="http://www.kreussler.com/en/home.html" target="_blank">
+                        <img src="/Content/logos/kresussler.png" class="footer__icon--kresussler" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.miele.ca/en/professional/index.htm" target="_blank">
+                        <img src="/Content/logos/Miele_Logo.png" class="footer__icon--miele" />
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.unipresscorp.com/index.html" target="_blank">
+                        <img src="/Content/logos/unilogo3.png" class="footer__icon--unipress" />
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="footer__section">
+            <h2 class="content__section__title--contrasting">Ratings &amp; Reviews</h2>
+            <ul>
+                <li>
+                    <a href="https://threebestrated.ca/dry-cleaners-in-markham-on" target="_blank">
+                        <img src="/Content/logos/threebestrated.png" class="footer__icon--bestRated" />
+                    </a>
+                </li>
             </ul>
         </section>
     </div>

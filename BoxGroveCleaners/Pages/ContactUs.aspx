@@ -46,21 +46,13 @@
                             Phone: 905-471-7242
                         </address><br />
                         <h2 class="content__section__title">Hours of Operation</h2>
-                        <p>
-                            Mon: 9:00AM - 7:00PM
-                        </p>
-                        <p>
-                            Tues: Closed
-                        </p>
-                        <p>
-                            Wed-Fri: 9:00AM - 7:00PM
-                        </p>
-                        <p>
-                            Sat: 10:00AM - 5:00PM
-                        </p>
-                        <p>
-                            Sun: 11:00AM - 4:00PM
-                        </p>
+                        <asp:repeater id="rptHoursOfOperation" runat="server">
+                            <itemtemplate>
+                                <p>
+                                    <%#Eval("Name") %>:&nbsp;<%#Eval("Hours") %>
+                                </p>
+                            </itemtemplate>
+                        </asp:repeater>
                     </section>
                 </div>
             </div>

@@ -98,6 +98,10 @@
     <Content Include="Content\images\service6.jpg" />
     <Content Include="Content\images\sunraysBG.jpg" />
     <Content Include="Content\images\textureBG.jpg" />
+    <Content Include="Content\logos\kresussler.png" />
+    <Content Include="Content\logos\Miele_Logo.png" />
+    <Content Include="Content\logos\threebestrated.png" />
+    <Content Include="Content\logos\unilogo3.png" />
     <Content Include="Content\style.css">
       <DependentUpon>style.less</DependentUpon>
     </Content>
