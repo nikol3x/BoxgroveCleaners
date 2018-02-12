@@ -11,11 +11,14 @@ namespace BoxGroveCleaners.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var faqModel = new FAQs();
-            faqModel.LoadData();
+            if (IsPostBack == false)
+            {
+                var faqModel = new FAQs();
+                faqModel.LoadData();
 
-            rptFAQsList.DataSource = faqModel.FaqList;
-            rptFAQsList.DataBind();
+                rptFAQsList.DataSource = faqModel.FaqList;
+                rptFAQsList.DataBind();
+            }
         }
 
         protected void btnAddFaq_Click(object sender, EventArgs e)

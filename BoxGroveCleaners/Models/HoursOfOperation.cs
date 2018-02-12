@@ -46,6 +46,97 @@ namespace BoxGroveCleaners.Models
 
             DecodeDayList();
         }
+
+        public void Add(string name, string hours)
+        {
+            if (Days.Count == 0)
+            {
+                LoadData();
+            }
+
+            var newDay = new Day();
+            newDay.Key = 1;
+
+            if (Days.Count > 0)
+            {
+                newDay.Key = Days[Days.Count - 1].Key + 1;
+            }
+
+            newDay.Name = name;
+            newDay.Hours = hours;
+            Days.Add(newDay);
+            EncodeDayList();
+
+            var path = HttpContext.Current.Server.MapPath(DATA_FILE_PATH);
+            var serializer = new XmlSerializer(typeof(HoursOfOperation));
+
+            using (var writer = new StreamWriter(path))
+            {
+                serializer.Serialize(writer, this);
+            }
+
+            DecodeDayList();
+        }
+
+        public void Remove(int key)
+        {
+            if (Days.Count == 0)
+            {
+                LoadData();
+            }
+
+            var updatedDays = new List<Day>();
+
+            foreach (var day in Days)
+            {
+                if (day.Key != key)
+                {
+                    updatedDays.Add(day);
+                }
+            }
+
+            Days = updatedDays;
+            EncodeDayList();
+
+            var path = HttpContext.Current.Server.MapPath(DATA_FILE_PATH);
+            var serializer = new XmlSerializer(typeof(HoursOfOperation));
+
+            using (var writer = new StreamWriter(path))
+            {
+                serializer.Serialize(writer, this);
+            }
+
+            DecodeDayList();
+        }
+
+        public void Update(int key, string name, string hours)
+        {
+            if (Days.Count == 0)
+            {
+                LoadData();
+            }
+
+            foreach (var day in Days)
+            {
+                if (day.Key == key)
+                {
+                    day.Name = name;
+                    day.Hours = hours;
+                }
+            }
+
+            EncodeDayList();
+
+            var path = HttpContext.Current.Server.MapPath(DATA_FILE_PATH);
+            var serializer = new XmlSerializer(typeof(HoursOfOperation));
+
+            using (var writer = new StreamWriter(path))
+            {
+                serializer.Serialize(writer, this);
+            }
+
+            DecodeDayList();
+        }
         #endregion
 
         #region Helpers

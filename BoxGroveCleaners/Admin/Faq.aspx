@@ -27,7 +27,7 @@
                 <a data-js-hook="singlepagenav" href="/Pages/ContactUs.aspx" class="text-contrasting">Contact Us</a>
             </li>
             <li class="nav__link nav__link--selected">
-                <a data-js-hook="singlepagenav" href="/Pages/Content.aspx" class="text-contrasting">Administration</a>
+                <a data-js-hook="singlepagenav" href="/Admin/Index.aspx" class="text-contrasting">Administration</a>
             </li>
         </ul>
     </nav>

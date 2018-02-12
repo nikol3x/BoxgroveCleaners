@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Admin\Coupon.aspx" />
     <Content Include="Admin\Faq.aspx" />
+    <Content Include="Admin\Hours.aspx" />
     <Content Include="Admin\Index.aspx" />
     <Content Include="Admin\Login.aspx" />
     <Content Include="Content\bootstrap\bootstrap-theme.css" />
@@ -173,6 +174,13 @@
     </Compile>
     <Compile Include="Admin\Faq.aspx.designer.cs">
       <DependentUpon>Faq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Hours.aspx.cs">
+      <DependentUpon>Hours.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Hours.aspx.designer.cs">
+      <DependentUpon>Hours.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
