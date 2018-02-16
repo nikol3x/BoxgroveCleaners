@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <HoursOfOperation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Days>
     <Day>
       <Key>1</Key>
       <Name>Mon</Name>
-      <Hours>9%3A00AM%20-%207%3A00PM</Hours>
+      <Hours>9%3a00AM+-+6%3a30PM</Hours>
     </Day>
     <Day>
       <Key>2</Key>
@@ -14,17 +14,17 @@
     <Day>
       <Key>3</Key>
       <Name>Wed-Fri</Name>
-      <Hours>9%3A00AM%20-%207%3A00PM</Hours>
+      <Hours>9%3a00AM+-+6%3a30PM</Hours>
     </Day>
     <Day>
       <Key>4</Key>
       <Name>Sat</Name>
-      <Hours>10%3A00AM%20-%205%3A00PM</Hours>
+      <Hours>10%3a00AM+-+4%3a00PM</Hours>
     </Day>
     <Day>
       <Key>5</Key>
       <Name>Sun</Name>
-      <Hours>11%3A00AM%20-%204%3A00PM</Hours>
+      <Hours>11%3a00AM+-+3%3a00PM</Hours>
     </Day>
   </Days>
 </HoursOfOperation>

@@ -184,6 +184,19 @@ a {
         color: #FFF;
     }*/
 }
+.link {
+  color: #00b4ff;
+}
+.link:hover,
+.link:focus,
+.link:visited {
+  text-decoration: underline;
+  color: #008fcc;
+}
+.link:active {
+  text-decoration: underline;
+  color: #000;
+}
 /*#endregion*/
 /*#region Lists*/
 .list--numbered {
@@ -468,11 +481,11 @@ a {
 }
 .footer__section {
   float: left;
-  margin-right: 80px;
+  margin-right: 55px;
 }
 .footer__icon--bestRated {
   margin-left: -15px;
-  max-width: 170px;
+  max-width: 140px;
 }
 .footer__icon--unipress {
   margin-top: 0.5em;

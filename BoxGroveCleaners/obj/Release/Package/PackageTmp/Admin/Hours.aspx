@@ -43,6 +43,10 @@
             </h1>
             <section class="content__section--first cf">
                 <div id="pnlHourList" class="content__container container-main cf">
+                    <a href="/Admin/LogOut.aspx" class="link">
+                        Click Here to <strong>Log Out</strong>
+                    </a>
+                    <br /><br />
                     <h2 class="content__section__title">
                         Update Hours From List
                     </h2>

@@ -41,6 +41,10 @@
     </h1>
     <section class="content__section--first cf" style="margin-bottom: 30em;">
         <div class="content__container container-main cf">
+            <a href="/Admin/LogOut.aspx" class="link">
+                Click Here to <strong>Log Out</strong>
+            </a>
+            <br /><br />
             <h2 class="content__section__title">
                 What Would You Like to Change?
             </h2>

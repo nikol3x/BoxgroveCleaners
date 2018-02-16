@@ -65,15 +65,12 @@
                         Contact Us
                     </a>
                 </li>
-                <li>
-                    <a href="/Admin/Login.aspx" class="text-muted">
-                        Administration
-                    </a>
-                </li>
             </ul>
         </section>
         <section class="footer__section">
-            <h2 class="content__section__title--contrasting">Affiliation</h2>
+            <h2 class="content__section__title--contrasting">
+                Affiliation &amp; Cleaning<br /> Tech Providers
+            </h2>
             <ul class="text-muted">
                 <li>
                     <a data-js-hook="singlepagenav" href="/Pages/CleaningProcess.aspx" class="text-muted">
@@ -81,18 +78,18 @@
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.kreussler.com/en/home.html" target="_blank">
-                        <img src="/Content/logos/kresussler.png" class="footer__icon--kresussler" />
+                    <a href="http://www.kreussler.com/en/home.html" target="_blank" class="text-muted">
+                        Kreussler
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.miele.ca/en/professional/index.htm" target="_blank">
-                        <img src="/Content/logos/Miele_Logo.png" class="footer__icon--miele" />
+                    <a href="https://www.miele.ca/en/professional/index.htm" target="_blank" class="text-muted">
+                        Miele
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.unipresscorp.com/index.html" target="_blank">
-                        <img src="/Content/logos/unilogo3.png" class="footer__icon--unipress" />
+                    <a href="http://www.unipresscorp.com/index.html" target="_blank" class="text-muted">
+                        Unipress
                     </a>
                 </li>
             </ul>
