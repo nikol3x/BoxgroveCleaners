@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Pricing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Prices>
+    <Price>
+      <Key>1</Key>
+      <Description>Men's+Dress+Shirt%3a+%243.95</Description>
+    </Price>
+    <Price>
+      <Key>2</Key>
+      <Description>Blouse%3a+%248.25</Description>
+    </Price>
+    <Price>
+      <Key>3</Key>
+      <Description>Pants%3a+%2410.60+</Description>
+    </Price>
+    <Price>
+      <Key>4</Key>
+      <Description>Blazer%3a+%2413.95+</Description>
+    </Price>
+    <Price>
+      <Key>5</Key>
+      <Description>2+piece+suit%3a+%2423.95</Description>
+    </Price>
+  </Prices>
+</Pricing>

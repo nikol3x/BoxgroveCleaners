@@ -19,6 +19,8 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -74,6 +76,7 @@
     <Content Include="Admin\Index.aspx" />
     <Content Include="Admin\Login.aspx" />
     <Content Include="Admin\LogOut.aspx" />
+    <Content Include="Admin\Pricing.aspx" />
     <Content Include="Content\bootstrap\bootstrap-theme.css" />
     <Content Include="Content\bootstrap\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap\bootstrap.css" />
@@ -89,6 +92,8 @@
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\logo_small.png" />
     <Content Include="Content\images\map.jpg" />
+    <Content Include="Content\images\nature.jpg" />
+    <Content Include="Content\images\pexels-photo.jpeg" />
     <Content Include="Content\images\process1.png" />
     <Content Include="Content\images\process2.png" />
     <Content Include="Content\images\process3.png" />
@@ -98,6 +103,7 @@
     <Content Include="Content\images\service4.jpg" />
     <Content Include="Content\images\service5.jpg" />
     <Content Include="Content\images\service6.jpg" />
+    <Content Include="Content\images\store.jpg" />
     <Content Include="Content\images\sunraysBG.jpg" />
     <Content Include="Content\images\textureBG.jpg" />
     <Content Include="Content\logos\kresussler.png" />
@@ -130,6 +136,9 @@
     <Content Include="Controls\Footer.ascx" />
     <Content Include="Coupon\EmptyTextFileSoFolderCanPublish.txt" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Models\Pricing.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Models\FAQs.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -142,6 +151,7 @@
     <Content Include="Pages\CleaningProcess.aspx" />
     <Content Include="Pages\ContactUs.aspx" />
     <Content Include="Pages\LaundryFaqs.aspx" />
+    <Content Include="Pages\Pricing.aspx" />
     <Content Include="Pages\Services.aspx" />
     <Content Include="robots.txt" />
     <Content Include="Scripts\bootstrap.js" />
@@ -153,6 +163,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap\bootstrap.css.map" />
+    <Content Include="Coupon\Coupon.pdf" />
     <None Include="Properties\PublishProfiles\Temp Folder to Copy to FTP.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
@@ -217,6 +228,13 @@
     <Compile Include="Admin\LogOut.aspx.designer.cs">
       <DependentUpon>LogOut.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Pricing.aspx.cs">
+      <DependentUpon>Pricing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pricing.aspx.designer.cs">
+      <DependentUpon>Pricing.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Footer.ascx.cs">
       <DependentUpon>Footer.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -231,6 +249,7 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Pricing.cs" />
     <Compile Include="Models\FAQs.cs" />
     <Compile Include="Models\HoursOfOperation.cs" />
     <Compile Include="Pages\CleaningProcess.aspx.cs">
@@ -253,6 +272,13 @@
     </Compile>
     <Compile Include="Pages\LaundryFaqs.aspx.designer.cs">
       <DependentUpon>LaundryFaqs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Pricing.aspx.cs">
+      <DependentUpon>Pricing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Pricing.aspx.designer.cs">
+      <DependentUpon>Pricing.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Services.aspx.cs">
       <DependentUpon>Services.aspx</DependentUpon>

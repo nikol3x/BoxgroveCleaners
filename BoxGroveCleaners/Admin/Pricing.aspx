@@ -1,7 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Templates/Layout.Master" AutoEventWireup="true" CodeBehind="Coupon.aspx.cs" Inherits="BoxGroveCleaners.Admin.Coupon" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Templates/Layout.Master" AutoEventWireup="true" CodeBehind="Pricing.aspx.cs" Inherits="BoxGroveCleaners.Admin.Pricing" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <title>Coupon Administration</title>
+    <title>Pricing Administration</title>
     <link href="/Content/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" />
     <link href="/Content/bootstrap/summernote.css" rel="stylesheet" />
@@ -38,29 +37,48 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="body" runat="server">
     <form id="frmCoupon" runat="server">
-        <asp:panel id="pnlUploadCoupon" cssclass="content" runat="server">
+        <asp:panel id="pnlPricing" cssclass="content" runat="server">
             <h1 class="content__header">
                 <span class="content__header__text container-main">
-                    Upload Coupon
+                    Update Pricing
                     <span class="icons--arrowDown">&nbsp;</span>
                 </span>
             </h1>
             <section class="content__section--first cf">
-                <div class="content__container container-main cf">
+                <div id="pnlPrices" class="content__container container-main cf">
                     <a href="/Admin/LogOut.aspx" class="link">
                         Click Here to <strong>Log Out</strong>
                     </a>
                     <br /><br />
                     <h2 class="content__section__title">
-                        Choose a Coupon to Upload
+                        Remove Price From List
+                    </h2>
+                    <asp:repeater id="rptPrices" runat="server" onitemcommand="rptPrices_ItemCommand">
+                        <itemtemplate>
+                            <div class="row">
+                                <div class="column1">
+                                    <asp:hiddenfield id="hiddenKey" runat="server" value='<%#Eval("Key") %>' />
+                                    <asp:linkbutton id="btnRemovePrice" runat="server" commandname="Delete" text="Remove Price" cssclass="btn-main"></asp:linkbutton>
+                                </div>
+                                <div class="column2">
+                                    <%#Eval("Description") %>
+                                </div>
+                            </div>
+                        </itemtemplate>
+                    </asp:repeater>
+                </div>
+                <div id="pnlPricesForm" class="content__container container-main cf">
+                    <h2 class="content__section__title">
+                        Add New Price
                     </h2>
                     <p>
-                        The uploaded coupon must be in .pdf format and will replace the current
-                        coupon on the website.
+                        When adding new Price type into the Price field, do not copy and paste from a different program such as Micrsoft Word since
+                        such a program will add additional formatting which may not be valid for this website.
                     </p><br />
-                    <asp:fileupload id="upCoupon" runat="server" /><br /><br />
-                    <asp:label id="lblCouponError" runat="server" cssclass="error-text"></asp:label>
-                    <asp:button id="btnCoupon" cssclass="btn-main" runat="server" text="Save Coupon" onclick="btnCoupon_Click" />
+                    <asp:label id="lblNewDescription" runat="server" associatedcontrolid="txtNewDescription" cssclass="label">Price:</asp:label><br />
+                    <asp:textbox id="txtNewDescription" runat="server" cssclass="textbox"></asp:textbox><br /><br />
+                    <asp:label id="lblNewPriceError" runat="server" cssclass="error-text"></asp:label>
+                    <asp:button id="btnAddPrice" cssclass="btn-main" runat="server" text="Add new Price" onclick="btnAddPrice_Click" />
                 </div>
             </section>
         </asp:panel>

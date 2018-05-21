@@ -7,19 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BoxGroveCleaners {
+namespace BoxGroveCleaners.Pages {
     
     
-    public partial class Default {
-        
-        /// <summary>
-        /// rptLaundryFaqs control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptLaundryFaqs;
+    public partial class Pricing {
         
         /// <summary>
         /// rptPricingLeft control.
@@ -38,14 +29,5 @@ namespace BoxGroveCleaners {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater rptPricingRight;
-        
-        /// <summary>
-        /// rptHoursOfOperation control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptHoursOfOperation;
     }
 }

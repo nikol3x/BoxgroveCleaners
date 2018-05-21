@@ -406,6 +406,7 @@ a {
 .content__header {
   background-color: #00b4ff;
   border-top: 1px solid #FFF;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
   color: #FFF;
   font-family: 'Noto Serif', 'Times New Roman', Times, serif;
   font-size: 1.7em;
@@ -419,7 +420,7 @@ a {
   padding: 40px 20px 0;
 }
 .content__section--first {
-  box-shadow: 0 -3px 2px -2px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 -3px 2px -2px rgba(0, 0, 0, 0.5);
 }
 .content__section--left {
   -moz-box-sizing: border-box;
@@ -453,23 +454,29 @@ a {
   margin-bottom: 5px;
 }
 .icons--arrowDown {
-  background: url(/Content/images/arrowDown.png) no-repeat transparent;
+  border: 19px solid transparent;
+  border-top-color: #00b4ff;
+  border-left-width: 30px;
+  border-right-width: 30px;
   display: block;
   left: 58px;
-  height: 19px;
+  height: 0;
   position: absolute;
   top: 58px;
-  width: 62px;
+  width: 0;
   z-index: 10;
 }
 .icons--arrowDownMap {
-  background: url(/Content/images/arrowDown_Map.png) no-repeat transparent;
+  border: 19px solid transparent;
+  border-top-color: #f0ede5;
+  border-left-width: 30px;
+  border-right-width: 30px;
   display: block;
   left: 58px;
-  height: 19px;
+  height: 0;
   position: absolute;
   top: -42px;
-  width: 62px;
+  width: 0;
   z-index: 10;
 }
 .footer {
@@ -573,6 +580,26 @@ a {
   padding: 5px 10px;
   width: 87%;
 }
+#pnlPrices .column1,
+#pnlPrices .column2 {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid #CCC;
+}
+#pnlPrices .column1 {
+  float: left;
+  width: 13%;
+}
+#pnlPrices .column1 a {
+  display: block;
+  float: left;
+}
+#pnlPrices .column2 {
+  float: left;
+  padding: 5px 10px;
+  width: 87%;
+}
 #pnlLoginContent {
   max-width: 370px;
   width: 100%;
@@ -625,6 +652,42 @@ a {
   position: absolute;
   top: 1px;
   border-radius: 2px;
+}
+#pnlPricing .content__container {
+  font-size: 1.3em;
+}
+#pnlPricing .pricing-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #515151;
+}
+#pnlPricing .pricing-container__col {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  line-height: 2em;
+  padding: 1em 2em;
+}
+#pnlPricing .pricing-container__col1 {
+  border-right: 1px solid #515151;
+  width: 40%;
+}
+#pnlPricing .pricing-container__col2 {
+  width: 60%;
+}
+#pnlPricing a {
+  color: #000;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px #FFF;
+}
+#pnlPricing p {
+  text-shadow: 1px 1px 1px #FFF;
+}
+.background--nature {
+  background-image: url('/Content/images/store.jpg');
+  background-size: cover;
+  background-position: right top;
+  background-attachment: fixed;
 }
 /*#endregion*/
 /*#region Overrides*/
