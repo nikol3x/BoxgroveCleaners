@@ -60,6 +60,9 @@
                         <li>
                             <a href="/Admin/Hours.aspx" class="text-secondary">Update Hours</a>
                         </li>
+                        <li>
+                            <a href="/Admin/Pricing.aspx" class="text-secondary">Update Pricing</a>
+                        </li>
                     </ul>
                 </div>
             </div>

@@ -25,6 +25,9 @@
                 <a data-js-hook="singlepagenav" href="/Pages/LaundryFaqs.aspx" class="text-contrasting">Laundry FAQs</a>
             </li>
             <li class="nav__link">
+                <a data-js-hook="singlepagenav" href="/Pages/Pricing.aspx" class="text-contrasting">Pricing</a>
+            </li>
+            <li class="nav__link">
                 <a data-js-hook="singlepagenav" href="/Pages/ContactUs.aspx" class="text-contrasting">Contact Us</a>
             </li>
         </ul>
@@ -127,7 +130,7 @@
             </div>
             <div class="banner__summary cf">
                 <section class="banner__summary__section">
-                    <h1 class="banner__summary__header">Announcements &amp;<br />Special Promotion</h1>
+                    <h1 class="banner__summary__header">Announcements</h1>
                     <a href="/Coupon/Coupon.pdf" target="_blank" class="banner__summary__text text-contrasting">
                         Click Here to print our latest coupon
                     </a>
@@ -361,6 +364,49 @@
                 </div>
             </section>
         </div>
+        <div id="pnlPricing" class="content background--nature">
+            <h1 class="content__header">
+                <span class="content__header__text container-main">
+                    Pricing
+                    <span class="icons--arrowDown">&nbsp;</span>
+                </span>
+            </h1>
+            <section class="content__section--first cf">
+                <div class="content__container container-main cf">
+                    <div class="pricing-container cf">
+                        <div class="pricing-container__col pricing-container__col1">
+                            <ul class="list-dotted">
+                                <asp:repeater id="rptPricingLeft" runat="server">
+                                    <itemtemplate>
+                                        <li>
+                                            <%#Eval("Description") %>
+                                        </li>
+                                    </itemtemplate>
+                                </asp:repeater>                                
+                            </ul>
+                        </div>
+                        <div class="pricing-container__col pricing-container__col2">
+                            <ul class="list-dotted">
+                                <asp:repeater id="rptPricingRight" runat="server">
+                                    <itemtemplate>
+                                        <li>
+                                            <%#Eval("Description") %>
+                                        </li>
+                                    </itemtemplate>
+                                </asp:repeater>
+                            </ul>
+                        </div>
+                    </div>
+                    <br />
+                    <p>
+                        Please call 
+                        <b>905.576.7500</b> or 
+                        <a href="mailto:shadow_0072003@yahoo.ca">email us</a>
+                        for any additional pricing.
+                    </p>
+                </div>
+            </section>
+        </div>
         <div id="pnlContactUs" class="content">
             <h1 class="content__header">
                 <span class="content__header__text container-main">
@@ -392,7 +438,6 @@
         </div>
     </article>
 </asp:Content>
-
 <asp:Content ID="Content3" ContentPlaceHolderID="scripts" runat="server">
     <script src="Scripts/jssor.js"></script>
     <script src="Scripts/jssor.slider.js"></script>

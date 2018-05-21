@@ -24,6 +24,9 @@
                 <a data-js-hook="singlepagenav" href="/Pages/LaundryFaqs.aspx" class="text-contrasting">Laundry FAQs</a>
             </li>
             <li class="nav__link">
+                <a data-js-hook="singlepagenav" href="/Pages/Pricing.aspx" class="text-contrasting">Pricing</a>
+            </li>
+            <li class="nav__link">
                 <a data-js-hook="singlepagenav" href="/Pages/ContactUs.aspx" class="text-contrasting">Contact Us</a>
             </li>
             <li class="nav__link nav__link--selected">
