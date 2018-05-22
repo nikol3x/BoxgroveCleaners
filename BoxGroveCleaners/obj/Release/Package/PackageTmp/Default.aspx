@@ -400,7 +400,7 @@
                     <br />
                     <p>
                         Please call 
-                        <b>905.576.7500</b> or 
+                        <b>905-471-7242</b> or 
                         <a href="mailto:shadow_0072003@yahoo.ca">email us</a>
                         for any additional pricing.
                     </p>
