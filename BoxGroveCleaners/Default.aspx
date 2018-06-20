@@ -130,9 +130,8 @@
             </div>
             <div class="banner__summary cf">
                 <section class="banner__summary__section">
-                    <h1 class="banner__summary__header">Announcements</h1>
-                    <a href="/Coupon/Coupon.pdf" target="_blank" class="banner__summary__text text-contrasting">
-                        Click Here to print our latest coupon
+                    <a href="/Coupon/Coupon.pdf" target="_blank">
+                        <h1 class="banner__summary__header">Announcements</h1>
                     </a>
                 </section>
                 <section class="banner__summary__section banner__summary__section--separator">
@@ -376,9 +375,9 @@
                     <div class="pricing-container cf">
                         <div class="pricing-container__col pricing-container__col1">
                             <ul class="list-dotted">
-                                <asp:repeater id="rptPricingLeft" runat="server">
+                                <asp:repeater id="rptPricingLeft" runat="server" onitemdatabound="rptPricingLeft_ItemDataBound">
                                     <itemtemplate>
-                                        <li>
+                                        <li id="itemLeft" runat="server">
                                             <%#Eval("Description") %>
                                         </li>
                                     </itemtemplate>
@@ -387,9 +386,9 @@
                         </div>
                         <div class="pricing-container__col pricing-container__col2">
                             <ul class="list-dotted">
-                                <asp:repeater id="rptPricingRight" runat="server">
+                                <asp:repeater id="rptPricingRight" runat="server" onitemdatabound="rptPricingRight_ItemDataBound">
                                     <itemtemplate>
-                                        <li>
+                                        <li id="itemRight" runat="server">
                                             <%#Eval("Description") %>
                                         </li>
                                     </itemtemplate>
@@ -401,7 +400,6 @@
                     <p>
                         Please call 
                         <b>905-471-7242</b> or 
-                        <a href="mailto:shadow_0072003@yahoo.ca">email us</a>
                         for any additional pricing.
                     </p>
                 </div>

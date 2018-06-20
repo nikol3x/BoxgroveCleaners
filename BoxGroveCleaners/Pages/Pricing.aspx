@@ -43,9 +43,9 @@
                     <div class="pricing-container cf">
                         <div class="pricing-container__col pricing-container__col1">
                             <ul class="list-dotted">
-                                <asp:repeater id="rptPricingLeft" runat="server">
+                                <asp:repeater id="rptPricingLeft" runat="server" onitemdatabound="rptPricingLeft_ItemDataBound">
                                     <itemtemplate>
-                                        <li>
+                                        <li id="itemLeft" runat="server">
                                             <%#Eval("Description") %>
                                         </li>
                                     </itemtemplate>
@@ -54,9 +54,9 @@
                         </div>
                         <div class="pricing-container__col pricing-container__col2">
                             <ul class="list-dotted">
-                                <asp:repeater id="rptPricingRight" runat="server">
+                                <asp:repeater id="rptPricingRight" runat="server" onitemdatabound="rptPricingRight_ItemDataBound">
                                     <itemtemplate>
-                                        <li>
+                                        <li id="itemRight" runat="server">
                                             <%#Eval("Description") %>
                                         </li>
                                     </itemtemplate>
@@ -68,7 +68,6 @@
                     <p>
                         Please call 
                         <b>905-471-7242</b> or 
-                        <a href="mailto:shadow_0072003@yahoo.ca">email us</a>
                         for any additional pricing.
                     </p>
                 </div>

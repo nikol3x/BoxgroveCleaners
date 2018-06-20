@@ -61,7 +61,7 @@
                                     <asp:linkbutton id="btnRemovePrice" runat="server" commandname="Delete" text="Remove Price" cssclass="btn-main"></asp:linkbutton>
                                 </div>
                                 <div class="column2">
-                                    <%#Eval("Description") %>
+                                    <%#Eval("Description") %>&nbsp;
                                 </div>
                             </div>
                         </itemtemplate>

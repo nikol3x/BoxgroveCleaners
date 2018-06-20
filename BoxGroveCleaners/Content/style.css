@@ -669,10 +669,10 @@ a {
   padding: 1em 2em;
 }
 #pnlPricing .pricing-container__col1 {
-  border-right: 1px solid #515151;
   width: 50%;
 }
 #pnlPricing .pricing-container__col2 {
+  border-left: 1px solid #515151;
   width: 50%;
 }
 #pnlPricing a {

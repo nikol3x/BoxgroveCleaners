@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 using System.Web;
 using System.Web.UI;
+using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 
 namespace BoxGroveCleaners.Pages
@@ -28,6 +29,36 @@ namespace BoxGroveCleaners.Pages
 
                     rptPricingRight.DataSource = secondGroupPricing;
                     rptPricingRight.DataBind();
+                }
+            }
+        }
+
+        protected void rptPricingLeft_ItemDataBound(object sender, RepeaterItemEventArgs e)
+        {
+            if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
+            {
+                HtmlGenericControl listItem = (HtmlGenericControl)e.Item.FindControl("itemLeft");
+
+                string price = listItem.InnerText.Replace("\r\n", "").Trim();
+
+                if (string.IsNullOrEmpty(price))
+                {
+                    listItem.Visible = false;
+                }
+            }
+        }
+
+        protected void rptPricingRight_ItemDataBound(object sender, RepeaterItemEventArgs e)
+        {
+            if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
+            {
+                HtmlGenericControl listItem = (HtmlGenericControl)e.Item.FindControl("itemRight");
+
+                string price = listItem.InnerText.Replace("\r\n", "").Trim();
+
+                if (string.IsNullOrEmpty(price))
+                {
+                    listItem.Visible = false;
                 }
             }
         }
